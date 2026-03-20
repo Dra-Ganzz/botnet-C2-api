@@ -1,4 +1,4 @@
-#.              WELCOME TO ANDRAX C2-API V3.0.5                        #
+#              WELCOME TO ANDRAX C2-API V3.0.5                        #
 from operator import index
 import socket
 import json
