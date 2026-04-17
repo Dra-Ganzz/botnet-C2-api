@@ -103,8 +103,8 @@ def maklu_maty(url):
 def waktu():
     return datetime.now().strftime("%b/%d/%Y")
 
-B = '\033[35m' #MERAH
-P = '\033[1;37m' #PUTIH
+ = '\033[35m' #MERAH
+ = '\033[1;37m' #PUTIH
 
 def update_attacks():
     global ongoing_attacks
@@ -134,9 +134,9 @@ def ongoing():
         ongoing_attacks = [attack for attack in ongoing_attacks if attack not in completed_attacks]
         for i, attack in enumerate(ongoing_attacks, 1):
             elapsed_time = int(t.time() - attack['start_time'])
-            print(f" {i} │ {attack['host']:>15} │  {elapsed_time:>3}  │    {attack['duration']:>3}   │ {attack['method']:<9} ")
+            prin(f" {i} │ {attack['host']:>15} │  {elapsed_time:>3}  │    {attack['duration']:>3}   │ {attack['method']:<9} ")
         for i, attack in enumerate(completed_attacks, 1):
-            print(f" {i} │ {attack['host']:>15} │  {attack['duration']:>3}  │    {attack['duration']:>3}   │ {attack['method']:<9} ")
+            prin(f" {i} │ {attack['host']:>15} │  {attack['duration']:>3}  │    {attack['duration']:>3}   │ {attack['method']:<9} ")
 
     else:
         print("(cnc) No running attacks, why not start some?")
